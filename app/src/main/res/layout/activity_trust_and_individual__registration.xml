@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e8dc"
+    tools:context="com.example.gautam.cowconnect.Trust_and_individual_Registration">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarTrust_Reg"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/toolbarHeight"
+        android:background="#e58240"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/ScrollMarginLeftRight"
+        android:layout_marginStart="@dimen/ScrollMarginLeftRight"
+        android:layout_marginTop="@dimen/ScrollViewMarginTop"
+
+        android:background="@drawable/header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@drawable/rectangle_shape">
+
+            <View
+                android:id="@+id/firstLine"
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:background="#ed9b21"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/headlinetvid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="As a Trust/Individual"
+                android:textAlignment="center"
+                android:textSize="@dimen/FirstTVtextSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstLine" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/ProfileImageWidth"
+                android:layout_height="145dp"
+                android:layout_below="@+id/KnowId"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/proe"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="0dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/headlinetvid" />
+
+            <TextView
+                android:id="@+id/tvaddimage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/AddPicTopMargin"
+                android:text="Add Picture"
+                android:textSize="@dimen/AddPicTVtxtSize"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/tvFirstReq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:textSize="@dimen/SmallTVtextSize"
+                android:drawableLeft="@drawable/starnew"
+                android:drawablePadding="10dp"
+                android:text="Required"
+                android:textColor="#e51212"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvaddimage" />
+
+            <TextView
+                android:id="@+id/nametv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/starnew"
+                android:text="Name"
+                android:textSize="@dimen/SmallTVtextSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvFirstReq" />
+
+            <EditText
+                android:id="@+id/nameEditTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:hint="Your answer"
+                android:textSize="@dimen/BigEditTextSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nametv" />
+
+            <TextView
+                android:id="@+id/addressTrust"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/starnew"
+                android:text="Name of Trust"
+                android:textSize="@dimen/SmallTVtextSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/nameEditTxt" />
+
+            <EditText
+                android:id="@+id/NameTrustEdtTxt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:hint="Your Answer"
+                android:textSize="@dimen/BigEditTextSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addressTrust" />
+
+            <TextView
+                android:id="@+id/TrustAddressTv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/starnew"
+                android:text="Address of Trust"
+                android:textSize="@dimen/SmallTVtextSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/NameTrustEdtTxt" />
+
+            <EditText
+                android:id="@+id/ETaddress"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:hint="Your Answer"
+                android:textSize="@dimen/BigEditTextSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TrustAddressTv" />
+
+            <TextView
+                android:id="@+id/TVcontact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:drawablePadding="10dp"
+                android:textSize="@dimen/SmallTVtextSize"
+                android:drawableRight="@drawable/starnew"
+                android:text="Contact No."
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ETaddress" />
+
+            <EditText
+                android:id="@+id/ETcontact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:hint="Your Answer"
+                android:textSize="@dimen/BigEditTextSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVcontact" />
+
+            <TextView
+                android:id="@+id/TVemail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/starnew"
+                android:text="Email ID"
+                android:textSize="@dimen/SmallTVtextSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ETcontact"
+                android:layout_marginLeft="32dp" />
+
+            <EditText
+                android:id="@+id/ETemail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:hint="Your Answer"
+                android:textSize="@dimen/BigEditTextSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVemail" />
+
+            <TextView
+                android:id="@+id/SocialLink"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/starnew"
+                android:text="Social Media Links"
+                android:textSize="@dimen/SmallTVtextSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ETemail" />
+
+            <EditText
+                android:id="@+id/ETsocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:hint="Your Answer"
+                android:textSize="@dimen/BigEditTextSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/SocialLink" />
+
+            <TextView
+                android:id="@+id/tvActivity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:drawablePadding="10dp"
+                android:drawableRight="@drawable/starnew"
+                android:text="Activity"
+                android:textSize="@dimen/SmallTVtextSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ETsocial" />
+
+            <CheckBox
+                android:id="@+id/cvfirst"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:textSize="@dimen/CheckBoxSize"
+                android:text="Goshala(Shelter)"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvActivity" />
+
+            <CheckBox
+                android:id="@+id/cvsecond"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:textSize="@dimen/CheckBoxSize"
+                android:text="Go Raksha(Saved from Slaughter,Injury,Disabled,Abandoned)"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvfirst" />
+
+            <CheckBox
+                android:id="@+id/cvthird"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:textSize="@dimen/CheckBoxSize"
+                android:text="Go Samvardhan(Breed Preservation and Improvement)"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvsecond" />
+
+            <CheckBox
+                android:id="@+id/cvfour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:textSize="@dimen/CheckBoxSize"
+                android:text="Go Updation(Cow Product Manufacture)"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvthird" />
+
+            <CheckBox
+                android:id="@+id/cvfive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="Go Chikitsa"
+                android:textSize="@dimen/CheckBoxSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvfour" />
+
+            <CheckBox
+                android:id="@+id/cvsix"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="Go Amrita"
+                android:textSize="@dimen/CheckBoxSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvfive" />
+
+            <CheckBox
+                android:id="@+id/cvseven"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="Go Vigyan"
+                android:textSize="@dimen/CheckBoxSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvsix" />
+
+            <CheckBox
+                android:id="@+id/cveight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:text="Go Krishi"
+                android:textSize="@dimen/CheckBoxSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cvseven" />
+
+            <TextView
+                android:id="@+id/tvsubmit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/SubmitButtonMarginBottom"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="@dimen/SubmitButtonMarginTop"
+                android:background="@drawable/reg_submit_shape"
+                android:paddingBottom="8dp"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:paddingTop="8dp"
+                android:text="SUBMIT"
+                android:textSize="@dimen/CheckBoxSize"
+                android:textColor="#fff"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cveight" />
+
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

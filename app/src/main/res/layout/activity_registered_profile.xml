@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gautam.cowconnect.RegisteredProfile">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_profile"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ProfileToolbarHeight"
+        android:background="#e58240"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVHead"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Profile"
+        android:textAlignment="center"
+        android:paddingRight="45dp"
+        android:textColor="#fff"
+        android:textSize="@dimen/ProfileTextSize"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/tvDone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_profile">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/innerConstraint_lyout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvDone">
+
+            <TextView
+                android:id="@+id/tvgetname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/SecondTVmarginTop"
+                android:text="Aadhoi Panjara"
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textSize="@dimen/AddProfileFirstLine"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/ProfileImageWidth"
+                android:layout_height="@dimen/GetProfileImageHeight"
+                android:layout_below="@+id/KnowId"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/GetProfileMarginTop"
+                android:src="@drawable/proe"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="0dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/firstLine"
+                android:layout_width="0dp"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="@dimen/FiestViewLineMarginTop"
+                android:background="#c0c0c0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/tvgetnametwo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MarginLeftForTextView"
+                android:layout_marginTop="24dp"
+                android:text="Contact Person"
+                android:textSize="@dimen/SmallTextBoxTextSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstLine" />
+
+            <TextView
+                android:id="@+id/tvgetnamethree"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginRight="@dimen/MarginRightForTextView"
+                android:layout_marginLeft="@dimen/MarginLeftForTextView"
+                android:gravity="left|center_vertical"
+                android:text="Aadhoi Panjara"
+                android:textColor="#000"
+                android:textSize="@dimen/BigTextBoxTextSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvgetnametwo" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="@dimen/ViewLineTopMargin"
+                android:background="#c0c0c0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvgetnamethree" />
+
+            <TextView
+                android:id="@+id/textViewState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MarginLeftForTextView"
+                android:layout_marginTop="@dimen/SmallTVtoViewLineTopMargin"
+                android:text="Mobile"
+                android:textSize="@dimen/SmallTextBoxTextSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/spinnerProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewcountry"
+                android:layout_marginRight="@dimen/MarginRightForTextView"
+                android:layout_marginLeft="@dimen/MarginLeftForTextView"
+                android:gravity="left|center_vertical"
+                android:text="9646710266"
+                android:textColor="#000"
+                android:textSize="@dimen/BigTextBoxTextSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewState"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/FourthLine"
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="@dimen/ViewLineTopMargin"
+                android:background="#c0c0c0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerProfile" />
+
+            <TextView
+                android:id="@+id/tvgetAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/MarginRightForTextView"
+                android:layout_marginLeft="@dimen/MarginLeftForTextView"
+                android:drawableRight="@drawable/pinone"
+
+                android:gravity="left|center_vertical"
+                android:text="Aadhoi,Kutch,Bhachau-701116"
+                android:textColor="#000"
+                android:textSize="@dimen/BigTextBoxTextSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.425"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvaddress" />
+
+            <View
+                android:id="@+id/fifthline"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginEnd="24dp"
+
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="@dimen/ViewLineTopMargin"
+                android:background="#c0c0c0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvgetAddress" />
+
+            <TextView
+                android:id="@+id/tvActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/SmallTVtoViewLineTopMargin"
+                android:layout_marginLeft="@dimen/MarginLeftForTextView"
+                android:text="Activity"
+                android:textSize="@dimen/SmallTextBoxTextSize"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fifthline" />
+
+            <TextView
+                android:id="@+id/tvgetActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/MarginRightForTextView"
+                android:layout_marginLeft="@dimen/MarginLeftForTextView"
+                android:layout_marginBottom="@dimen/LastBoxMargin"
+                android:text="Goshala,GoUpdation"
+                android:textColor="#000"
+                android:textSize="@dimen/BigTextBoxTextSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvActivity" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="@dimen/ThreeImagesWidth"
+                android:layout_height="@dimen/ThreeImagesHeight"
+                android:layout_marginStart="61dp"
+                android:layout_marginTop="@dimen/ThreeImageMarginTop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvgetname"
+                app:srcCompat="@drawable/callbig" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="@dimen/ThreeImagesWidth"
+                android:layout_height="@dimen/ThreeImagesHeight"
+                android:layout_marginEnd="50dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="@dimen/ThreeImageMarginTop"
+                app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                app:layout_constraintStart_toEndOf="@+id/imageView3"
+                app:layout_constraintTop_toBottomOf="@+id/tvgetname"
+                app:srcCompat="@drawable/chatbig" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="@dimen/ThreeImagesWidth"
+                android:layout_height="@dimen/ThreeImagesHeight"
+                android:layout_marginEnd="61dp"
+                android:layout_marginTop="@dimen/ThreeImageMarginTop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvgetname"
+                app:srcCompat="@drawable/msgbig" />
+
+            <TextView
+                android:id="@+id/tvaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/MarginLeftForTextView"
+                android:textSize="@dimen/SmallTextBoxTextSize"
+                android:layout_marginTop="@dimen/SmallTVtoViewLineTopMargin"
+                android:text="Address"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FourthLine" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar_profile"
+        app:srcCompat="@android:drawable/ic_media_previous" />
+
+</android.support.constraint.ConstraintLayout>

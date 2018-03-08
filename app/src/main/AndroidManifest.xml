@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gautam.cowconnect">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".WelcomeActivity" />
+        <activity android:name=".GetStartedActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".OTP_Submission" />
+        <activity android:name=".Wlcm_to_CowConnect" />
+        <activity android:name=".Profile" />
+        <activity android:name=".CowConnect_GridViewIcons" />
+        <activity android:name=".GridAdapter" />
+        <activity android:name=".Registration" />
+        <activity android:name=".RegNextPgTrust" />
+        <activity android:name=".Trust_and_individual_Registration" />
+        <activity android:name=".Find_a_cow" />
+        <activity android:name=".Find_a_cow_Adapter" />
+        <activity android:name=".RegisteredProfile" />
+        <activity android:name=".GridPageActivity" />
+        <activity android:name=".ActivityGoshala" />
+        <activity android:name=".SplashAfterMobileRegistration" />
+        <activity android:name=".GridPageProductSeller" />
+        <activity android:name=".GridPageWriteUs" />
+        <activity android:name=".GridPageWriteUsFeedback" />
+        <activity android:name=".GridPageWriteUsAskExpert" />
+        <activity android:name=".GridPageAboutUs"></activity>
+    </application>
+
+</manifest>

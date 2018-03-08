@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cowconnecttextsize">60dp</dimen>
+    <dimen name="circularImageHeight">400dp</dimen>
+    <dimen name="secondTextViewTextSize">22sp</dimen>
+    <dimen name="thirdTextViewTextSize">18sp</dimen>
+    <dimen name="textsizeoftopword">50sp</dimen>
+
+    //for Get Started page//
+    <dimen name="toolbr_height_getStarted">77dp</dimen>
+    <dimen name="HeadlinGetStarted">30sp</dimen>
+    <dimen name="textSizeOfEnterUrMobileNo">40sp</dimen>
+    <dimen name="textSizeSelectCountry">19.5sp</dimen>
+    <dimen name="textSizeMobileNumber">19.5sp</dimen>
+    <dimen name="textSizeOf91">19sp</dimen>
+    <dimen name="textSizeOfContinue">30sp</dimen>
+    <dimen name="ContinueButtonTextSize">30sp</dimen>
+
+    //for Profile layout//
+    <dimen name="ProfileToolbarHeight">70dp</dimen>
+    <dimen name="ProfileTextSize">30sp</dimen>
+    <dimen name="AddProfileFirstLine">27sp</dimen>
+    <dimen name="ProfileImageWidth">600dp</dimen>
+    <dimen name="ProfileImageHeight">200dp</dimen>
+    <dimen name="BigTextBoxHeight">60dp</dimen>
+    <dimen name="BigTextBoxTextSize">33dp</dimen>
+    <dimen name="SmallTextBoxTextSize">30sp</dimen>
+    <dimen name="MarginTopFromBigTextBoxToSmallTV">4dp</dimen>
+    <dimen name="MarginBetweenMobileToUpperMobilTV">8dp</dimen>
+    <dimen name="MarginFromSmallTVtoLineANDlineTOupperTV">20dp</dimen>
+    <dimen name="DoneButtonHeight">70dp</dimen>
+    <dimen name="DoneButtonTextSize">28sp</dimen>
+    <dimen name="DoneMarginBottom">24dp</dimen>
+    <dimen name="TextSizeOfRadioButton">19sp</dimen>
+
+    //for getProfile layout//
+    <dimen name="GetProfileImageHeight">157dp</dimen>
+    <dimen name="GetProfileMarginTop">32dp</dimen>
+    <dimen name="SecondTVmarginTop">16dp</dimen>
+    <dimen name="ThreeImageMarginTop">16dp</dimen>
+    <dimen name="ViewLineTopMargin">32dp</dimen>
+    <dimen name="FiestViewLineMarginTop">40dp</dimen>
+    <dimen name="SmallTVtoViewLineTopMargin">24dp</dimen>
+    <dimen name="ThreeImagesWidth">85dp</dimen>
+    <dimen name="ThreeImagesHeight">45dp</dimen>
+    <dimen name="MarginLeftForTextView">24dp</dimen>
+    <dimen name="MarginRightForTextView">24dp</dimen>
+    <dimen name="LastBoxMargin">32dp</dimen>
+
+    //closed//
+
+    //for grid_adaptor icon//
+    <dimen name="ImagelaoutWidth">100dp</dimen>
+    <dimen name="ImagelaoutHeight">100dp</dimen>
+    <dimen name="ImgaeMarginLeft">26dp</dimen>
+    <dimen name="ImageMarginTop">30dp</dimen>
+    <dimen name="textSize">19.4sp</dimen>
+    //closed//
+
+    //for trust/individual Registration//
+    <dimen name="toolbarHeight">316dp</dimen>
+    <dimen name="ScrollViewMarginTop">130dp</dimen>
+    <dimen name="ScrollMarginLeftRight">50dp</dimen>
+    <dimen name="FirstTVtextSize">35dp</dimen>
+    <dimen name="AddPicTVtxtSize">24dp</dimen>
+    <dimen name="AddPicTopMargin">16dp</dimen>
+    <dimen name="SmallTVtextSize">25sp</dimen>
+    <dimen name="BigEditTextSize">35sp</dimen>
+    <dimen name="CheckBoxSize">22.5sp</dimen>
+    <dimen name="SubmitButtonMarginTop">70dp</dimen>
+    <dimen name="SubmitButtonMarginBottom">70dp</dimen>
+    //closed//
+
+    //Activity Grid icon detail//
+    <dimen name="ActivityName">27sp</dimen>
+    <dimen name="margintop">16dp</dimen>
+    <dimen name="textsize">25sp</dimen>
+    //closed//
+
+    //Activity Write Us Feedback/Ask the expert//
+    <dimen name="edittextheight">710dp</dimen>
+    <dimen name="marginallside">24dp</dimen>
+    <dimen name="sendtvheight">75dp</dimen>
+    <dimen name="textsizesend">35sp</dimen>
+    <dimen name="edittextsize">30sp</dimen>
+    <dimen name="toobarheight">95dp</dimen>
+
+    //closed//
+</resources>

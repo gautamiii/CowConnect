@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gautam.cowconnect.Profile">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_profile"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/ProfileToolbarHeight"
+        android:background="#e58240"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Profile"
+        android:textColor="#fff"
+        android:textSize="@dimen/ProfileTextSize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDone"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/DoneButtonHeight"
+        android:background="@drawable/rectangle_shape"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp"
+        android:text="Done"
+        android:textAlignment="center"
+        android:textColor="#e58240"
+        android:textSize="@dimen/DoneButtonTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/tvDone"
+        app:layout_constraintBottom_toTopOf="@+id/tvDone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_profile">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/innerConstraint_lyout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/tvDone">
+
+            <TextView
+                android:id="@+id/tvProfileAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Add your profile picture"
+                android:textAlignment="center"
+                android:textSize="@dimen/AddProfileFirstLine"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="@dimen/ProfileImageWidth"
+                android:layout_height="@dimen/ProfileImageHeight"
+                android:layout_below="@+id/KnowId"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:src="@drawable/proe"
+                app:civ_border_color="#ffffff"
+                app:civ_border_width="0dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvProfileAdd" />
+
+            <View
+                android:id="@+id/firstLine"
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginTop="40dp"
+                android:background="#c0c0c0"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+            <RadioButton
+                android:id="@+id/rdBtnIndividual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Individual"
+                android:textSize="@dimen/TextSizeOfRadioButton"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstLine" />
+
+            <RadioButton
+                android:id="@+id/rdBtnInstitution"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:textSize="@dimen/TextSizeOfRadioButton"
+                android:text="Institutional"
+                app:layout_constraintBaseline_toBaselineOf="@+id/rdBtnIndividual"
+                app:layout_constraintStart_toEndOf="@+id/rdBtnIndividual" />
+
+            <View
+                android:id="@+id/secondLine"
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="@dimen/MarginFromSmallTVtoLineANDlineTOupperTV"
+                android:background="#c0c0c0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rdBtnIndividual" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/MarginFromSmallTVtoLineANDlineTOupperTV"
+                android:text="Name"
+                android:textSize="@dimen/SmallTextBoxTextSize"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/secondLine" />
+
+            <TextView
+                android:id="@+id/tvNameCome"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/BigTextBoxHeight"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="@dimen/MarginTopFromBigTextBoxToSmallTV"
+                android:background="@drawable/rectangle_shape"
+                android:gravity="left|center_vertical"
+                android:text="Gautam"
+                android:textColor="#000"
+                android:textSize="@dimen/BigTextBoxTextSize"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/MarginFromSmallTVtoLineANDlineTOupperTV"
+                android:background="#c0c0c0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvNameCome" />
+
+            <TextView
+                android:id="@+id/textViewState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/MarginFromSmallTVtoLineANDlineTOupperTV"
+                android:text="State"
+                android:textSize="@dimen/SmallTextBoxTextSize"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <TextView
+                android:id="@+id/spinnerProfile"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/BigTextBoxHeight"
+                android:layout_below="@+id/textViewcountry"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="@dimen/MarginTopFromBigTextBoxToSmallTV"
+                android:text="Punjab"
+                android:background="@drawable/rectangle_shape"
+                android:gravity="left|center_vertical"
+                android:textColor="#000"
+                android:textSize="@dimen/BigTextBoxTextSize"
+                android:paddingLeft="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textViewState"
+                tools:ignore="MissingConstraints" />
+
+            <View
+                android:id="@+id/FourthLine"
+                android:layout_width="fill_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/MarginFromSmallTVtoLineANDlineTOupperTV"
+                android:background="#c0c0c0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerProfile" />
+
+            <TextView
+                android:id="@+id/tvEmailId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="@dimen/MarginFromSmallTVtoLineANDlineTOupperTV"
+                android:text="Email Id"
+                android:textSize="@dimen/SmallTextBoxTextSize"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FourthLine" />
+
+            <EditText
+                android:id="@+id/tvEmailIdBackData"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/BigTextBoxHeight"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="@dimen/MarginTopFromBigTextBoxToSmallTV"
+                android:background="@drawable/rectangle_shape"
+                android:gravity="left|center_vertical"
+                android:hint="gautamprasadiii@gmail.com"
+                android:textColor="#000"
+                android:textSize="@dimen/BigTextBoxTextSize"
+                android:paddingLeft="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmailId" />
+
+            <View
+                android:id="@+id/fifthline"
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="@dimen/MarginFromSmallTVtoLineANDlineTOupperTV"
+                android:background="#c0c0c0"
+                app:layout_constraintHorizontal_bias="1.0"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmailIdBackData" />
+
+            <TextView
+                android:id="@+id/tvMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="@dimen/MarginFromSmallTVtoLineANDlineTOupperTV"
+                android:text="Password"
+                android:textSize="@dimen/SmallTextBoxTextSize"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fifthline" />
+
+            <EditText
+                android:id="@+id/tvMobileNoFrmBack"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/BigTextBoxHeight"
+
+                android:layout_marginBottom="@dimen/DoneMarginBottom"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="@dimen/MarginBetweenMobileToUpperMobilTV"
+                android:background="@drawable/rectangle_shape"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="10dp"
+                android:hint=""
+                android:textColor="#000"
+                android:textSize="@dimen/BigTextBoxTextSize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvMobile" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

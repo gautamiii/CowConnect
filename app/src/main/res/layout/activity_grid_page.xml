@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gautam.cowconnect.GridPageActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbaractivitygrid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#e58240"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Activity"
+        android:textColor="#fff"
+        android:textSize="@dimen/ActivityName"
+        app:layout_constraintEnd_toEndOf="@+id/toolbaractivitygrid"
+        app:layout_constraintHorizontal_bias="0.44"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/toolbaractivitygrid"
+        app:layout_constraintTop_toTopOf="@+id/toolbaractivitygrid"
+        app:srcCompat="@android:drawable/ic_media_previous" />
+
+
+    <TextView
+        android:id="@+id/tvgoshalaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/forwardone"
+        android:gravity="left|center"
+        android:text="Goshala"
+        android:textColor="#000"
+        android:textSize="@dimen/textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbaractivitygrid" />
+
+    <View
+        android:id="@+id/tvActivityFVLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="8dp"
+        android:background="#c0c0c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvgoshalaActivity" />
+
+    <TextView
+        android:id="@+id/tvGoRakshaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/forwardone"
+        android:gravity="left|center"
+        android:text="Go Raksha"
+        android:textColor="#000"
+        android:textSize="@dimen/textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivityFVLine" />
+
+    <View
+        android:id="@+id/tvActivitySVLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="8dp"
+        android:background="#c0c0c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGoRakshaActivity" />
+
+    <TextView
+        android:id="@+id/tvSamvardhanActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/forwardone"
+        android:gravity="left|center"
+        android:text="Go Samvardhan"
+        android:textColor="#000"
+        android:textSize="@dimen/textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivitySVLine" />
+    <View
+        android:id="@+id/tvActivityTVLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="8dp"
+        android:background="#c0c0c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSamvardhanActivity" />
+
+    <TextView
+        android:id="@+id/tvUpdationActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/forwardone"
+        android:gravity="left|center"
+        android:text="Go Updation"
+        android:textColor="#000"
+        android:textSize="@dimen/textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivityTVLine" />
+    <View
+        android:id="@+id/tvActivityFourthVLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="8dp"
+        android:background="#c0c0c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpdationActivity" />
+
+    <TextView
+        android:id="@+id/tvChikitsaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/forwardone"
+        android:gravity="left|center"
+        android:text="Go Chikitsa"
+        android:textColor="#000"
+        android:textSize="@dimen/textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivityFourthVLine" />
+    <View
+        android:id="@+id/tvActivityFiveVLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="8dp"
+        android:background="#c0c0c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvChikitsaActivity" />
+
+    <TextView
+        android:id="@+id/tvVigyanActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/forwardone"
+        android:gravity="left|center"
+        android:text="Go Vigyaan Anusandhan"
+        android:textColor="#000"
+        android:textSize="@dimen/textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivityFiveVLine" />
+    <View
+        android:id="@+id/tvActivitysixVLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="8dp"
+        android:background="#c0c0c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVigyanActivity" />
+
+    <TextView
+        android:id="@+id/tvKrishiActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/forwardone"
+        android:gravity="left|center"
+        android:text="Go Krishi"
+        android:textColor="#000"
+        android:textSize="@dimen/textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivitysixVLine" />
+    <View
+        android:id="@+id/tvActivitysevenVLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="8dp"
+        android:background="#c0c0c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKrishiActivity" />
+
+    <TextView
+        android:id="@+id/tvDugdhaActivity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:drawableRight="@drawable/forwardone"
+        android:gravity="left|center"
+        android:text="Go Dugdha"
+        android:textColor="#000"
+        android:textSize="@dimen/textsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvActivitysevenVLine" />
+    <View
+        android:id="@+id/tvActivityeightVLine"
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="8dp"
+        android:background="#c0c0c0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDugdhaActivity" />
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
