@@ -15,6 +15,7 @@ public class ActivityGoshala extends AppCompatActivity {
     private List<Module_NameContact> moduleNameContactList;
     private RecyclerView mrecyclerViewGoshala;
     private ActivityGoshalaAdapter mAdapterGoshala;
+    String ab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
